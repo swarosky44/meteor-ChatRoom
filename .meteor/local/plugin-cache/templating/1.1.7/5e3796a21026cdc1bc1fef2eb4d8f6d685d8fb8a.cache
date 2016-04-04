@@ -1,0 +1,1 @@
+{"head":"<title>Todo List</title>\n  <meta name=\"viewport\" content=\"initial-scale=1, maximum-scale=1, user-scalable=no\">","body":"","js":"\nTemplate.body.addContent((function() {\n  var view = this;\n  return HTML.Raw('<div id=\"app\"></div>');\n}));\nMeteor.startup(Template.body.renderToDocument);\n","bodyAttrs":{}}
