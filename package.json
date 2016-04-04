@@ -1,0 +1,15 @@
+{
+  "name": "Chat",
+  "private": false,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "classnames": "^2.2.3",
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^0.14.8",
+    "react-addons-pure-render-mixin": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "react-router": "^2.0.1"
+  }
+}
