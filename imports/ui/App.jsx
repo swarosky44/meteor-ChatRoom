@@ -31,13 +31,13 @@ class App extends Component {
  
 App.propTypes = {
   msgs: PropTypes.array.isRequired,
-  currentUser: PropTypes.object,
+  currentUser: PropTypes.object
 }
  
 export default createContainer(() => {
   Meteor.subscribe('msgs')
   return {
     msgs: Msgs.find({}, { sort:{ time :-1} }).fetch(),
-    currentUser: Meteor.user(),
-  };
+    currentUser: Meteor.user()
+  }
 }, App)

@@ -8,12 +8,11 @@ if (Meteor.isServer) {
     return Msgs.find({
       $or: [
         { 'sender.id': this.userId },
-        { 'recevier.id': this.userId },
+        { 'recevier.id': this.userId }
       ],
     })
   })
   Meteor.publish('chatMsgs', function chatMsgsPublication(friend_id) {
-    console.log(friend_id,'asdsadsdsadasdas')
     return Msgs.find({
       $or: [
         {'sender.id': this.userId, 'recevier.id': friend_id}, 
